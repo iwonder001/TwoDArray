@@ -32,4 +32,12 @@ public class TwoDArray {
 		//casting integer to double
 		return (double)getTotal()/(ROWS_SIZE * COLS_SIZE);
 	}
+	public double getRowTotal(int r){
+		int rowTotal = 0;
+		for(int c = 0; c < COLS_SIZE; c++){
+			rowTotal += numberArray [r][c];
+			
+		}
+		return rowTotal;
+	}
 }
